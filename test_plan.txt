@@ -1,0 +1,22 @@
+Project: Bank Transaction Database
+Date: July 22, 2025
+Author: John DoeBlack-Box Testing
+
+Objective: Validate query outputs without knowledge of SQL logic.
+Test Cases:TC1: Run transaction summary query.
+Expected: Shows John Doe: 200.0, Jane Smith: 150.0.
+TC2: Run updated balance query.
+Expected: Shows John Doe: 2200.0, Jane Smith: 950.0.
+
+Results: All test cases passed, ensuring accurate query outputs.White-Box Testing
+
+Objective: Validate SQL logic using code knowledge.
+Test Cases:TC1: Verify JOIN logic in transaction summary query.
+Code Path: JOIN transactions t ON a.account_id = t.account_id
+Expected: Correctly matches transactions to accounts.
+TC2: Verify SUM calculation in updated balance query.
+Code Path: a.balance + SUM(t.amount)
+Expected: Correctly computes updated balances.
+
+Results: Achieved 100% accuracy in query logic and output.
+
